@@ -100,6 +100,27 @@ li{
     grid-row-start: 3;
     grid-row-end: span end;
 
-    z-index: 3;
+    z-index: 4;
 }
 
+.green{
+    width:100%;
+    height:auto;
+    grid-column-start: 5;
+    grid-column-end: span 2;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+
+    z-index: 6;
+}
+
+.yellow{
+    width:200%;
+    height:auto;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+
+    z-index: -1;
+}
