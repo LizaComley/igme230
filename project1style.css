@@ -3,7 +3,6 @@
     font-family: 'Bungee Hairline', cursive;
     font-size: 40px;
     color: black;
-    max-width: 10s00px;
 }
 
 .wrapper{
@@ -20,7 +19,6 @@
     grid-column-end: end;
     grid-row-start: 1;
     grid-row-end: span 1;
-
 }
 
 .projects{
