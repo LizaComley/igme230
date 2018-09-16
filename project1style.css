@@ -137,7 +137,7 @@ li{
 
 footer{
     grid-column-start: 1;
-    grid-column-end: span 6;
+    grid-column-end: span end;
     grid-row-start: 4;
     grid-row-end: span 1;
 
