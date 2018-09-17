@@ -1,3 +1,7 @@
+/* Liza Comley 
+CSS for IGME-230 project 1
+*/
+
 *{
     box-sizing: border-box;
     font-family: 'Bungee Hairline', cursive;
@@ -5,15 +9,18 @@
     color: black;
 }
 
+/* tarets everything in body pretty much*/
 .wrapper{
     display: grid;
     max-width: 1000px;
     margin: 0 auto;
 
+    /* initializes css grid layout */
     grid-template-columns: repeat(10, 10% [col-start]);
     grid-template-rows: 25% 200px auto;
 }
 
+/* name and subhead positioning */
 .intro{
     grid-column-start: 1;
     grid-column-end: end;
@@ -21,6 +28,8 @@
     grid-row-end: span 1;
 }
 
+
+/* 2nd column positioning */
 .projects{
     grid-column-start: 9;
     grid-column-end: span 2;
@@ -31,6 +40,7 @@
     margin-left: 5%;
 }
 
+/* 1st column positioning */
 .exercises{
     grid-column-start: 6;
     grid-column-end: span 2;
@@ -40,6 +50,7 @@
     margin-left: 5%;
 }
 
+/* font sizes */
 h1{
     font-size: 100%;
 }
@@ -63,10 +74,12 @@ a{
     text-decoration: none;
 }
 
+/* change color of link when highlighted */
 a:hover{
     color: #7dd9f2;
 }
 
+/* changes list styling */
 li,ul{
     list-style-type: none;
     margin: 0;
@@ -78,7 +91,7 @@ li{
     padding-left: 5%
 }
 
-
+/* image positioning and layering */
 .me{
     width:100%;
     height:auto;
@@ -133,6 +146,7 @@ li{
     z-index: -1;
 }
 
+/* positioning of footer */
 footer{
     grid-column-start: 1;
     grid-column-end: span end;
@@ -143,6 +157,7 @@ footer{
     margin-bottom: 3%;
 }
 
+/* set email link size to fit the rest of text */
 .email{
     font-size: 100%;
 }
