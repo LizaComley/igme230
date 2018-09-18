@@ -36,7 +36,6 @@ CSS for IGME-230 project 1
     grid-row-start: 2;
     grid-row-end: span 1;
 
-    margin-top: 40%;
     margin-left: 5%;
 }
 
@@ -70,7 +69,7 @@ h3{
 }
 
 a{
-    font-size: 30%;
+    font-size: 100%;
     text-decoration: none;
 }
 
@@ -83,11 +82,13 @@ a:hover{
 li,ul{
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    line-height: 70%;
+    
+    line-height: 100%;
 }
 
 li{
+    font-size: 30%;
+    padding-top: 5%;;
     padding-left: 5%
 }
 
@@ -136,12 +137,13 @@ li{
     z-index: -1;
 }
 .red{
-    width:250%;
+    width:200%;
     height:auto;
-    grid-column-start: 7;
+    grid-column-start: 8;
     grid-column-end: span 2;
     grid-row-start: 2;
     grid-row-end: span 1;
+    margin-top: 20%;
 
     z-index: -1;
 }
