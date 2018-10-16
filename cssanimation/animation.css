@@ -2,6 +2,7 @@
 General Formatting 
 *****************/
 
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 * {
     box-sizing: border-box;
@@ -39,6 +40,7 @@ img {
     border-radius: 5px;
 }
 
+
 #icons {
     width: 300px;
     display: flex;
@@ -71,9 +73,43 @@ main {
     max-width: 95vw;
     /* provide space between main and the header and footer */
     margin: 1rem 0;
+
+    animation: entrance .5s linear both;
 }
 
 /**************
  CSS Animation 
 **************/
 
+@keyframes entrance{
+    from{transform: translateX(-2000px);}
+    to {transform: translateX(0px);}
+}
+
+main div:nth-child(1) {
+    animation: entrance .5s 2s linear both;
+    }
+
+main div:nth-child(2) {
+    animation: entrance .5s 1.5s linear both;
+   }
+
+main div:nth-child(3) {
+    animation: entrance .5s 1s linear both;
+   }
+
+main div:nth-child(4) {
+    animation: entrance .5s .5s linear both;
+   }
+
+main img { transition: all .2s ease-in-out; }
+main img:hover { transform: scale(1.2); }
+
+@keyframes spin{
+    0%{transform: rotate(0turn);}
+    100%{transform: rotateY(360deg);}
+}
+
+a:hover .fa { 
+    animation: spin .5s linear both;
+    }
