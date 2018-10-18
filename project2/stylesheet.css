@@ -1,3 +1,35 @@
 *{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper{
+    display: grid;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 1vw 0 1vw;
+
+    grid-column-gap: 1vw;
+    grid-row-gap: .5vw;
+
+    grid-template-columns: repeat(11, auto);
+    grid-template-rows: repeat(10, auto);
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+}
+
+.content{
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: span 1;
 }
