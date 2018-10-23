@@ -5,6 +5,7 @@ CSS for IGME-230 project 1
 *{
     box-sizing: border-box;
     font-family: 'Bungee Hairline', cursive;
+    font-weight: 700;
     font-size: 40px;
     color: black;
 }
