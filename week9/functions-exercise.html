@@ -31,8 +31,25 @@
     
     <script>
         "use strict";
-        let colors = []; // add some colors
-        let foods = []; // add some foods
+        let colors = ["yellow", "green", "blue" ]; // add some colors
+        let foods = ["sushi", "burrito", "chana masala"]; // add some foods
+
+        let colorList = document.querySelector("#colorsList");
+        let foodList = document.querySelector("#foodsList");
+
+
+        function createList(array, list){
+            for (let item of array) {
+                let listItem = document.createElement('li');
+                listItem.innerHTML = item;
+                list.appendChild(listItem);
+            };
+        }
+
+        createList(colors,colorList);
+        createList(foods,foodList);
+        
+                
     </script>
     
 </body>
