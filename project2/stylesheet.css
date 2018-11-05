@@ -18,7 +18,7 @@
     margin: 0 auto;
     
     grid-template-columns: repeat(12,  [col-start]1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(20, auto);
 
     grid-column-gap: 1vw;
     grid-row-gap: .5vw;
@@ -117,7 +117,7 @@ a{
 footer{
     grid-column-start: 1;
     grid-column-end: span 12;
-    grid-row-start: 10;
+    grid-row-start: 20;
     grid-row-end: span 1;
 }
 footer p, footer a{
@@ -154,7 +154,12 @@ footer p, footer a{
 }
 
 .pImg2{
+    grid-column-start: 1;
+    grid-column-end: span 12;
     grid-row-start: 5;
+    grid-row-end: span 1;
+    width: 100%;
+    height: auto;
 }
 
 .pDesc{
@@ -166,7 +171,12 @@ footer p, footer a{
     font-size: .95em;
 }
 .pDesc2{
+    margin-bottom: 3vw;
+    grid-column-start: 4;
+    grid-column-end: span 6;
     grid-row-start: 7;
+    grid-row-end: span 1;
+    font-size: .95em;
 }
 /* --------------------------------------------------- */
 /*           DOCUMENTATION PAGE FORMATTING             */
@@ -181,6 +191,7 @@ footer p, footer a{
 
     font-size: 2em;
     margin: 3vw 0;
+    
 }
 
 .d1, .d2, .d3{
@@ -190,29 +201,61 @@ footer p, footer a{
     grid-row-end: span 1;
 
     font-size: 1.2em;
+    margin-bottom: 2vw;
+    color: coral;
 }
 .d2{
-    grid-row-start: 5;
+    grid-row-start: 10;
+    grid-row-end: span 1;
 }
 .d3{
-    grid-row-start: 7;
+    grid-row-start: 15;
+    grid-row-end: span 1;
 }
 
-.pd1, .pd2, .pd3{
-    grid-column-start: 4;
-    grid-column-end: span 8;
+.pd1{
+    grid-column-start: 1;
+    grid-column-end: span 12;
     grid-row-start: 4;
     grid-row-end: span 1;
 
     font-size: 1em;
+}
+.pd12{
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+
     margin-bottom: 4vw;
 }
 
 .pd2{
-    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 11;
+    grid-row-end: span 1;
+    font-size: 1em;
+}
+.pd22{
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 12;
+    grid-row-end: span 1;
+    margin-bottom: 4vw;
 }
 .pd3{
-    grid-row-start: 8;
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 16;
+    grid-row-end: span 1;
+}
+.pd32{
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 17;
+    grid-row-end: span 1;
+    margin-bottom: 4vw;
 }
 
 
@@ -335,35 +378,31 @@ footer p, footer a{
         text-align: right;
       }
       
-      #menuToggle input:checked ~ ul
-      {
+      #menuToggle input:checked ~ ul{
         transform: none;
       }
 
     /* --------------------------------------------------- */
     /*           MOBILE PROJECT PAGE FORMATTING            */
     /* --------------------------------------------------- */
-      .pDesc{
+    .pDesc{
         grid-column-start: 2;
         grid-column-end: span 10;
         grid-row-start: 8;
         grid-row-end: span 1;
-        }
+    }
     .pDesc2{
         margin-bottom: 3vw;
         grid-column-start: 2;
         grid-column-end: span 10;
         grid-row-start: 9;
         grid-row-end: span 1;
-        }
+     }
 
     /* --------------------------------------------------- */
     /*         MOBILE DOCUMENTATION PAGE FORMATTING        */
     /* --------------------------------------------------- */
     .pd1, .pd2, .pd3{
-        grid-column-start: 2;
-        grid-column-end: span 10;
-
-} 
-
-
+        grid-column-start: 4;
+        grid-column-end: span 8;
+    }
