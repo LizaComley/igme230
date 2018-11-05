@@ -7,7 +7,9 @@
     margin: 0px auto;
     max-width: 1000px;
 }
-
+/* --------------------------------------------------- */
+/*             CSS GRID CONTAINER & SETUP              */
+/* --------------------------------------------------- */
 .gridWrapper{
     display: grid;
     width: 100%;
@@ -21,7 +23,9 @@
     grid-column-gap: 1vw;
     grid-row-gap: .5vw;
 }
-
+/* --------------------------------------------------- */
+/*                  HEADER/NAV FOR WEB                 */
+/* --------------------------------------------------- */
 .name{
     grid-column-start: 1;
     grid-column-end: span 6;
@@ -49,20 +53,27 @@
     margin: 0;
 }
 
+/* DO NOT DISPLAY HAMBURGER MENU WHEN NOT MOBILE*/
+#menuToggle{
+    display: none;
+}
+
+
+/* --------------------------------------------------- */
+/*               GALLERY PAGE FORMATTING               */
+/* --------------------------------------------------- */
 .p1{
     grid-column-start: 1;
     grid-column-end: span 6;
     grid-row-start: 2;
     grid-row-end: span 1;
 }
-
 .p2{
     grid-column-start: 7;
     grid-column-end: span 6;
     grid-row-start: 2;
     grid-row-end: span 1;
 }
-
 .p3{
     grid-column-start: 1;
     grid-column-end: span 6;
@@ -74,7 +85,6 @@
     height: auto;
     object-fit: cover;
 }
-
 .p1,.p3{
     padding-right: .5vw;
 }
@@ -88,18 +98,22 @@
     opacity: .5;
 }
 
-#menuToggle{
-    display: none;
-}
 
-.current, li.current{
+/* --------------------------------------------------- */
+/*                   TEXT FORMATTING                   */
+/* --------------------------------------------------- */
+/* CURRENT PAGE HIGHLIGHT */
+.current{
     color: coral;
 }
 
+/* LINK FORMATTING */
 a{
     text-decoration: none;
 }
-
+/* --------------------------------------------------- */
+/*                FOOTER FORMATTING                    */
+/* --------------------------------------------------- */
 footer{
     grid-column-start: 1;
     grid-column-end: span 12;
@@ -109,9 +123,15 @@ footer{
 footer p, footer a{
     font-size: 10px;
     margin-bottom: 3%;
-
 }
-
+/* FOOTER IMAGE FORMATTING*/
+.minipic{
+    width: 50%;
+    height: auto;
+}
+/* --------------------------------------------------- */
+/*               PROJECT PAGE FORMATTING               */
+/* --------------------------------------------------- */
 .pHead{
     grid-column-start: 1;
     grid-column-end: span 12;
@@ -158,19 +178,28 @@ footer p, footer a{
     grid-row-end: span 1;
     font-size: .95em;
 }
-
-
-.minipic{
-    width: 50%;
-    height: auto;
-}
+/* --------------------------------------------------- */
+/*           DOCUMENTATION PAGE FORMATTING             */
+/* --------------------------------------------------- */
 
 
 
+
+/* *********************************************************** */
+/* ----------------------------------------------------------- */
+/*            MEDIA QUERY FOR MOBILE VERSION OF SITE           */
+/*                     BREAKPOINT @ 768PX                      */
+/* ----------------------------------------------------------- */
+/* *********************************************************** */
 @media only screen and (max-width: 768px) {
+
+    /* ADD PADDING TO EDGES OF SITE*/
     .gridWrapper{
         padding: 0 3vw;
     }
+    /* --------------------------------------------------- */
+    /*           MOBILE GALLERY PAGE FORMATTING            */
+    /* --------------------------------------------------- */
     .p1{
         grid-column-start: 1;
         grid-column-end: span 12;
@@ -198,17 +227,18 @@ footer p, footer a{
     .name{
         padding: 3vw 0 1vw 0;
     }
-    
+    /* --------------------------------------------------- */
+    /*                    HAMBURGER MENU                   */
+    /* --------------------------------------------------- */
     #menuToggle {
         display: block;
         position: absolute;
-        top: 2vw;
+        top: 4vw;
         right: 3vw;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
       }
-
       #menuToggle input {
         display: block;
         width: 40px;
@@ -221,7 +251,6 @@ footer p, footer a{
         z-index: 2;
         -webkit-touch-callout: none;
       }
-      
       #menuToggle span {
         display: block;
         width: 33px;
@@ -234,27 +263,21 @@ footer p, footer a{
         transform-origin: 4px 0px;
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
       }
-      
       #menuToggle span:first-child {
         transform-origin: 0% 0%;
       }
-      
       #menuToggle span:nth-last-child(2) {
         transform-origin: 0% 100%;
       }
-      
       #menuToggle input:checked ~ span {
         opacity: 1;
         transform: rotate(45deg) translate(-2px, -1px);
         background: #232323;
       }
-      
-      
       #menuToggle input:checked ~ span:nth-last-child(3) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
       }
-      
       #menuToggle input:checked ~ span:nth-last-child(2) {
         transform: rotate(-45deg) translate(0, -1px);
       }
@@ -284,19 +307,27 @@ footer p, footer a{
         transform: none;
       }
 
+    /* --------------------------------------------------- */
+    /*           MOBILE PROJECT PAGE FORMATTING            */
+    /* --------------------------------------------------- */
       .pDesc{
         grid-column-start: 2;
         grid-column-end: span 10;
         grid-row-start: 8;
         grid-row-end: span 1;
-    }
+        }
     .pDesc2{
         margin-bottom: 3vw;
         grid-column-start: 2;
         grid-column-end: span 10;
         grid-row-start: 9;
         grid-row-end: span 1;
-    }
+        }
+
+    /* --------------------------------------------------- */
+    /*         MOBILE DOCUMENTATION PAGE FORMATTING        */
+    /* --------------------------------------------------- */
+
 
 } 
 
