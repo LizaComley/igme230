@@ -4,9 +4,15 @@
     font-size: 20px;
     color: black;
     padding: 0px;
-    margin: 0px;
+    margin: 0px auto;
     max-width: 1000px;
+
 }
+
+
+
+
+
 
 .gridWrapper{
     display: grid;
@@ -19,8 +25,7 @@
     grid-template-rows: repeat(5, auto);
 
     grid-column-gap: 1vw;
-    grid-row-gap: .5vw;   
-    overflow: hidden; 
+    grid-row-gap: .5vw;
 }
 
 .name{
@@ -46,6 +51,7 @@
 
 .name,.links{
     padding: 1vw 0;
+    margin: 0;
 }
 
 .p1{
@@ -90,13 +96,27 @@
 .p2{
     padding-left: .5vw;
 }
-.p1,.p2.p3{
+.p1,.p2, .p3{
     padding-bottom: 2vw;
 }
 
 #menuToggle{
     display: none;
 }
+
+.current{
+    color: coral;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+a:hover, p:hover, li:hover{
+    color: gray;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -124,7 +144,6 @@
     .p1,.p2,.p3{
         padding: 3vw 0;
     }
-
     .links{
         display: none;
     }
