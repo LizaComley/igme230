@@ -268,7 +268,6 @@ footer p, footer a{
 /* ----------------------------------------------------------- */
 /* *********************************************************** */
 @media only screen and (max-width: 768px) {
-
     /* ADD PADDING TO EDGES OF SITE*/
     .gridWrapper{
         padding: 0 3vw;
@@ -406,3 +405,4 @@ footer p, footer a{
         grid-column-start: 4;
         grid-column-end: span 8;
     }
+}
