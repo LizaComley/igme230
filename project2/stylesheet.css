@@ -6,7 +6,6 @@
     padding: 0px;
     margin: 0px auto;
     max-width: 1000px;
-
 }
 
 .gridWrapper{
@@ -113,11 +112,18 @@ footer p, footer a{
 
 }
 
-bImg{
-    grid-column-start: 1;
-        grid-column-end: span 12;
-        grid-row-start: 2;
-        grid-row-end: span 1;
+.bImg{
+    grid-column-start: 2;
+    grid-column-end: span 2;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    width: 100%;
+    height: auto;
+}
+
+.minipic{
+    width: 50%;
+    height: auto;
 }
 
 
