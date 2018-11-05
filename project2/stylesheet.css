@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vw;
+    font-size: 20px;
     color: black;
     padding: 0px;
     margin: 0px;
@@ -30,22 +30,22 @@
 }
 
 .work{
-    grid-column-start: 7;
-    grid-column-end: span 2;
+    grid-column-start: 10;
+    grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
 }
 
 .about{
-    grid-column-start: 9;
-    grid-column-end: span 2;
+    grid-column-start: 11;
+    grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
 }
 
 .resume{
-    grid-column-start: 11;
-    grid-column-end: span 2;
+    grid-column-start: 12;
+    grid-column-end: span 1;
     grid-row-start: 1;
     grid-row-end: span 1;
 }
@@ -57,4 +57,7 @@
     grid-row-end: span 1;
 }
 
+.name,.about,.work,.resume{
+    padding: 1vw 0;
+}
 
