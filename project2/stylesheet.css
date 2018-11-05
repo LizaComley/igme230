@@ -154,12 +154,7 @@ footer p, footer a{
 }
 
 .pImg2{
-    grid-column-start: 1;
-    grid-column-end: span 12;
     grid-row-start: 5;
-    grid-row-end: span 1;
-    width: 100%;
-    height: auto;
 }
 
 .pDesc{
@@ -171,16 +166,54 @@ footer p, footer a{
     font-size: .95em;
 }
 .pDesc2{
-    margin-bottom: 3vw;
-    grid-column-start: 4;
-    grid-column-end: span 6;
     grid-row-start: 7;
-    grid-row-end: span 1;
-    font-size: .95em;
 }
 /* --------------------------------------------------- */
 /*           DOCUMENTATION PAGE FORMATTING             */
 /* --------------------------------------------------- */
+.hDoc{
+    grid-column-start: 1;
+    grid-column-end: span 12;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    width: 100%;
+    height: auto;
+
+    font-size: 2em;
+    margin: 3vw 0;
+}
+
+.d1, .d2, .d3{
+    grid-column-start: 2;
+    grid-column-end: span 10;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+
+    font-size: 1.2em;
+}
+.d2{
+    grid-row-start: 5;
+}
+.d3{
+    grid-row-start: 7;
+}
+
+.pd1, .pd2, .pd3{
+    grid-column-start: 4;
+    grid-column-end: span 8;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+
+    font-size: 1em;
+    margin-bottom: 4vw;
+}
+
+.pd2{
+    grid-row-start: 6;
+}
+.pd3{
+    grid-row-start: 8;
+}
 
 
 
@@ -327,7 +360,9 @@ footer p, footer a{
     /* --------------------------------------------------- */
     /*         MOBILE DOCUMENTATION PAGE FORMATTING        */
     /* --------------------------------------------------- */
-
+    .pd1, .pd2, .pd3{
+        grid-column-start: 2;
+        grid-column-end: span 10;
 
 } 
 
