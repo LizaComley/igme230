@@ -104,10 +104,9 @@
     display: none;
 }
 
-.current{
+.current, li.current{
     color: coral;
 }
-
 
 
 a{
