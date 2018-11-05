@@ -24,7 +24,7 @@
 
 .name{
     grid-column-start: 1;
-    grid-column-end: span 4;
+    grid-column-end: span 2;
     grid-row-start: 1;
     grid-row-end: span 1;
 }
@@ -60,4 +60,43 @@
 .name,.about,.work,.resume{
     padding: 1vw 0;
 }
+
+.project1{
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+
+.tube{
+    width: 100%;
+    height: auto;
+}
+
+.project2{
+    background-color: magenta;
+    grid-column-start: 7;
+    grid-column-end: span 6;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+}
+.balloon{
+    width: 100%;
+    height: auto;
+}
+
+/*
+.project3{
+    background-color: greenyellow;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+}
+.pills{
+    width: 100%;
+    height: auto;
+}
+/*
 
