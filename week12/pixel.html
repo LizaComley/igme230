@@ -76,8 +76,6 @@
             display: block;
             margin: 1rem 0;
             padding: 0;
-
-            
         }
     </style>
 </head>
@@ -108,7 +106,33 @@
         </div>
     </div>
     <script>
-     
+        const numCols = 30; // specify pixel grid columns
+        const numRows = 20; // specify pixel grid rows
+        const cellSize = 25; // specify dimension of cell square in px
+        const numCells = numCols * numRows; // calculate total number of cells
+
+        let pixelGrid = document.querySelector ("#pixelGrid");
+
+            pixelGrid.style.gridTemplateColumns = `repeat(${numCols},${cellSize}px)`;
+            pixelGrid.style.gridTemplateRows = `repeat(${numRows},${cellSize}px)`;
+
+        for(let i=0; i < numCells; i++){
+            $("#pixelGrid").append('<span class="cell"></span>');
+        }
+        
+        let color = $("#colorChooser").val();
+        console.log(color);
+
+        $("#colorChooser").change(function () { 
+            color = $(this).val();  
+            console.log(color);  
+        });
+
+        $(".cell").click(function () { 
+            $(this).css("background-color", color);
+        });
+
+        
 
 
     </script>
