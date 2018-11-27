@@ -1,0 +1,11 @@
+<p id="verse1">I love CSS.<br></p>
+
+<p id="verse2">I love HTML.</p>
+
+<p id="verse3">I love JavaScript.</p>
+
+<p id="verse4">I love PHP.</p>
+
+<p id="verse5">I love github.</p>
+
+<p id="verse6">I lied.</p>
