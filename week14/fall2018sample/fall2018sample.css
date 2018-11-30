@@ -39,6 +39,36 @@ Your Formatting
 ***************/
 
 
+/* use flexbox to center header and footer content*/
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* menuitem formatting */
+.menuitem{
+    background: white;
+    margin: 0;
+    border-top: 1px solid #b5e7a0;
+}
+
+/* submenu formatting */
+.submenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: none; /* hidden on site load*/
+}
+
+/* list item formatting */
+.submenu li{
+    padding-left: .25rem;
+    background: lightgray;
+}
+
+/* assign grid areas to div elements */
 header{
     grid-area: header;
 }
@@ -55,42 +85,34 @@ footer{
     grid-area: footer;
 }
 
-/* use flexbox to center header and footer content*/
-header, footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/**************************************************************************
+                             MOBILE GRID
+**************************************************************************/
+/* Mobile Grid Specifications:
+    width - 100% of the viewport width
+    1 column:
+        -uses all horizontal space
+    Rows:
+        -automatically generated
+            1-header
+            2-nav
+            3-article
+            4-aside
+            5-footer
+*/
 
-.menuitem{
-    background: white;
-    margin: 0;
-    border-top: 1px solid #b5e7a0;
-}
-.submenu{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: none;
-}
-
-.submenu li{
-    padding-left: .25rem;
-    background: lightgray;
-}
-
-
-
-/*******************************
-           MOBILE GRID
-*******************************/
 #wrapper{
-    display: grid;
+    display: grid; /* set display type of wrapper to grid */
+
+    /* div width & height settings */
     width: 100vw;
     min-height: 100vh;
 
+    /* grid setup */
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+
+    /* grid areas setup */
     grid-template-areas: 
         "header"
         "nav"
@@ -99,21 +121,49 @@ header, footer{
         "footer";
 }
 
-/*******************************
-           DESKTOP GRID
-*******************************/
+/**************************************************************************
+                              DESKTOP GRID
+**************************************************************************/
+/* Desktop Grid Specifications:
 
-@media only screen and (min-width: 700px) {
+        width - 90% of the viewport width
+        max-width - 1200px
+        min-height - 100% of the viewport height
+
+        3 rows and 3 columns:
+            First row:
+                -4rem high
+                -spans all columns
+                -holds header
+            Second row:
+                -Uses all available vertical space
+                -holds 3 elements:
+                    -1st col - 1/3 of available width and holds aside
+                    -2nd col - 2/3 of available width and holds article
+                    -3rd col - width of 200px and holds nav
+            Third row:
+                -3rem high
+                -spans all columns
+                -holds footer
+        */
+
+/* media query to switch from mobile to desktop grid at 600px breakpoint*/
+@media only screen and (min-width: 600px) {
     #wrapper{
-        display: grid;
+        display: grid; /* set display type of wrapper to grid */
+
+        /* div width & height settings */
         width: 90vw;
         max-width: 1200px;
         min-height: 100vh;
 
-        margin: 0 auto;
+        margin: 0 auto; /* centers #wrapper on page */
     
+        /* grid setup */
         grid-template-columns: 1fr 2fr 200px;
         grid-template-rows: 4rem 1fr 3rem;
+
+        /* grid areas setup */
         grid-template-areas: 
             "header header header"
             "aside article nav"
