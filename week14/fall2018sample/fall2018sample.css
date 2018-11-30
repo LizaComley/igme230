@@ -39,10 +39,90 @@ Your Formatting
 ***************/
 
 
-.wrapper{
-    display: grid
-    width: 90% vh;
-    max-width: 1200px;
-
-
+header{
+    grid-area: header;
 }
+nav{
+    grid-area: nav;
+}
+article{
+    grid-area: article;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+
+/* use flexbox to center header and footer content*/
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuitem{
+    background: white;
+    margin: 0;
+    border-top: 1px solid #b5e7a0;
+}
+.submenu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+
+.submenu li{
+    padding-left: .25rem;
+    background: lightgray;
+}
+
+
+
+/*******************************
+           MOBILE GRID
+*******************************/
+#wrapper{
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header"
+        "nav"
+        "article"
+        "aside"
+        "footer";
+}
+
+/*******************************
+           DESKTOP GRID
+*******************************/
+
+@media only screen and (min-width: 700px) {
+    #wrapper{
+        display: grid;
+        width: 90vw;
+        max-width: 1200px;
+        min-height: 100vh;
+
+        margin: 0 auto;
+    
+        grid-template-columns: 1fr 2fr 200px;
+        grid-template-rows: 4rem 1fr 3rem;
+        grid-template-areas: 
+            "header header header"
+            "aside article nav"
+            "footer footer footer";
+    }
+}
+
+
+
+
+
