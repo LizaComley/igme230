@@ -11,6 +11,7 @@ $("#choose-content").change(function() {
 });
 
 
-$("nav").click(function() {
-    $(".submenu").toggle();
+
+$(".menubox").click(function() {
+    $(this).find(".submenu").toggle();
 });
