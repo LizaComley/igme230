@@ -6,7 +6,7 @@ src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
 *                        AJAX Content Loading                           *
 *************************************************************************/
 
-let selection = ("content1.txt")  // sets default content to be displayed
+let selection = ("content1.txt");  // sets default content to be displayed
 $("#choose-content").val(selection); // changes menu option to the default
 $("#content").load(selection);   // retrieves only default element
 
