@@ -10,8 +10,8 @@ let selection = ("content1.txt");  // sets default content to be displayed
 $("#choose-content").val(selection); // changes menu option to the default
 $("#content").load(selection);   // retrieves only default element
 
-/* when the content selection is changed
-change the value of selection and load that content */
+/* when the content selection is changed:
+change the value of selection to current selection and load that content */
 $("#choose-content").change(function() {
     selection = $(this).val();
     $("#content").load(selection); 
