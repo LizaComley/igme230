@@ -34,3 +34,120 @@ aside {
 /**************
 Your Formatting
 ***************/
+
+
+
+/* use flexbox to center header, footer  and nav content*/
+header, footer, nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div{
+    margin: 0 auto;
+    z-index: 10;
+    text-align: center;
+}
+
+.menu{
+    width: 6rem;
+    background-color: #ccc;
+    margin: 0;
+}
+
+.items{
+    width: 6rem;
+    list-style-type: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+
+    display: none; /* hidden on site load*/
+}
+
+li{
+    padding-left: .25rem;
+    background-color: #ddd;
+}
+
+/* assign grid areas to div elements */
+header{
+    grid-area: header;
+    background-color: lightpink;
+}
+nav{
+    grid-area: nav;
+    background-color: lavenderblush;
+}
+article{
+    grid-area: article;
+    background-color: lightcyan;
+}
+aside{
+    grid-area: aside;
+    background-color: lightblue;
+}
+footer{
+    grid-area: footer;
+    background-color: lightpink;
+}
+#extracredit{
+    grid-area: extra;
+    background-color: lightblue;
+    
+}
+
+/**************************************************************************
+                             MOBILE GRID
+**************************************************************************/
+#yourgrid{
+    display: grid; /* set display type of wrapper to grid */
+
+    /* div width & height settings */
+    width: 100vw;
+    min-height: 100vh;
+
+    /* grid setup */
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 30px auto auto auto 30px;
+
+    /* grid areas setup */
+    grid-template-areas: 
+        "header"
+        "nav"
+        "article"
+        "aside"
+        "extra"
+        "footer";
+}
+
+/**************************************************************************
+                              DESKTOP GRID
+**************************************************************************/
+/* media query to switch from mobile to desktop grid at 600px breakpoint*/
+@media screen and (min-width: 800px) {
+    #yourgrid{
+        display: grid; /* set display type of wrapper to grid */
+
+        /* div width & height settings */
+        width: 90%;
+        max-width: 1000px;
+        max-height: 100vh;
+
+        margin: 0 auto; /* centers #wrapper on page */
+    
+        /* grid setup */
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 75px 30px 1fr auto 50px;
+
+        /* grid areas setup */
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "aside article"
+            "extra article"
+            "footer footer";
+    }
+}
