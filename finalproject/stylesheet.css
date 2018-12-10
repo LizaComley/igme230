@@ -33,7 +33,8 @@ body{
 /* --------------------------------------------------- 
                     HAMBURGER MENU                   
  --------------------------------------------------- */
-#menuToggle{
+/*menu bar position and toggle*/
+ #menuToggle{
     display: block;
     position: absolute;
     top: 1em;
@@ -56,6 +57,7 @@ body{
     z-index: 2;
     -webkit-touch-callout: none;
 }
+/*bar elements*/
 #menuToggle span{
     display: block;
     width: 33px;
@@ -96,6 +98,8 @@ body{
 #menuToggle input:checked ~ span:nth-last-child(2){
     transform: rotate(-45deg) translate(0, -1px);
 }
+
+/*actual menu*/
 #menu{
     position: absolute;
     width: 300px;
