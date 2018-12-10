@@ -23,6 +23,7 @@ White - text - #f9f9f9
     padding: 0px;
 }
 body{
+    width: 100vw;
     margin: 0px;
     overflow-x: hidden;
     background-color:#1a1a1a;
@@ -271,9 +272,12 @@ nav{
     margin-bottom: 10vh;
     display: flex;
 }
+
 .idk{
-    grid-area: idk;
-    justify-content: flex-end;
+    grid-area: landing;
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
     height: 70vh;
     width: auto;
 }
@@ -443,6 +447,8 @@ footer{
         "header"
         "nav"
         "landing"
+        "idk"
+
         "work"
         "p1"
         "p2"
@@ -482,4 +488,18 @@ footer{
         -webkit-user-select: none;
         user-select: none;
     }
+    .homepage{
+    grid-area: landing;
+    height: 90vh;
+    margin-bottom: 10vh;
+    display: flex;
+}
+.idk{
+    grid-area: landing;
+    position: absolute;
+    top: 45vh;
+    left: 2vw;
+    height: 40vh;
+    width: auto;
+}
 }
