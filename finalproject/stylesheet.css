@@ -364,6 +364,7 @@ footer{
 
 .pHead{
     grid-area: head;
+    color: #ffbda9;
 }
 .pImg{
     grid-area: img;
@@ -400,7 +401,7 @@ footer{
 
     "head head head head"
     ". img text ."
-    " .img text ."
+    ". img text ."
 
     "bar3 abtT abtT abtT"
     "bar3 photo abtP ."
@@ -443,6 +444,11 @@ footer{
         "p2"
         "p3"
         "p4"
+
+        "head"
+        "img"
+        "text"
+
         "abtT"
         "photo"
         "abtP"
