@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="/finalproject/styles/stylesheet.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Liza Comley - igme 230 - final project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div id="gridWrapper">
-
+        
         <header>
             <h1>Liza Comley</h1>
         </header>
@@ -22,10 +23,10 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <a href="https://lizacomley.github.io/igme230/project2/index.html" class="current"><li>Gallery</li></a>
-                        <a href="https://lizacomley.github.io/igme230/project2/about.html"><li>About</li></a>
-                        <a href="https://lizacomley.github.io/igme230/project2/resume.html"><li>Resume</li></a>
-                        <a href="https://lizacomley.github.io/igme230/project2/documentation.html"><li>Documentation</li></a>
+                        <a href="#gallery" class="current"><li>Gallery</li></a>
+                        <a href="#aboutme"><li>About</li></a>
+                        <a href="#resume"><li>Resume</li></a>
+                        <a href="#documentation"><li>Documentation</li></a>
                         <a href="https://lizacomley.github.io/igme230/index.html" target="_blank"><li>IGME 230 index page</li></a>
                     </ul>
                  </div>
@@ -39,50 +40,106 @@
 
 
 
-        <h2 class="myWork">my work</h2>
-        <div class="p1">
-            <a href="https://lizacomley.github.io/igme230/project2/tube.html"> <img src="images/ComleyTube2.jpg" title="tube sushi" alt="tube project" class="tube">
-            <p>3D Tube Project</p></a>
+        <h2 class="myWork" id="gallery" >GALLERY</h2>
+        <div class="p1" id="project">
+            <a href="https://lizacomley.github.io/igme230/project2/tube.html"> <img src="images/ComleyTube2.jpg" title="tube sushi" alt="tube project" class="tube" id="projimg"></a>
+            <div class="description">3D Tube Project</div>
         </div>
-        <div class="p2">
-            <a href="https://lizacomley.github.io/igme230/project2/balloon.html"> <img src="images/balloon2.jpg" title="balloon ritchie" alt="balloon ritchie project" class="balloon">
-            <p>Balloon RIT Mascot</p></a>
+        <div class="p2" id="project">
+            <a href="https://lizacomley.github.io/igme230/project2/balloon.html"> <img src="images/balloon2.jpg" title="balloon ritchie" alt="balloon ritchie project" class="balloon" id="projimg"></a>
+            <div class="description">Balloon RIT Mascot</div>
         </div>
-        <div class="p3">
-            <a href="https://lizacomley.github.io/igme230/project2/pills.html"> <img src="images/pillsposter2.jpg" title="got pills? project" alt="Got pills project" class="pills">
-            <p>Pill Drive Poster Redesign Project</p></a>
+        <div class="p3" id="project">
+            <a href="https://lizacomley.github.io/igme230/project2/pills.html"> <img src="images/pillsposter2.jpg" title="got pills? project" alt="Got pills project" class="pills" id="projimg"></a>
+            <div class="description">Pill Drive Poster Redesign Project</div>
         </div>
-        <div class="p4">
-            <a href="https://lizacomley.github.io/igme230/project2/pills.html"> <img src="images/pillsposter2.jpg" title="got pills? project" alt="Got pills project" class="pills">
-            <p>Pill Drive Poster Redesign Project</p></a>
+        <div class="p4" id="project">
+            <a href="https://lizacomley.github.io/igme230/project2/pills.html"> <img src="images/pillsposter2.jpg" title="got pills? project" alt="Got pills project" class="pills" id="projimg"></a>
+            <div class="description">Pill Drive Poster Redesign Project</div>
         </div>
 
         
-        <h2 class="aboutTitle">about me</h2>
+        <h2 class="aboutTitle" id="aboutme">ABOUT ME</h2>
+        <img src="/finalproject/images/me.jpeg" alt="me" class="photo">
         <div class="aboutme">
-            <p>Heyo!! I'm Liza. I'm a 20 year old New Media Design student at Rochester Institute of Technology in Rochester, NY. I'm from Albany, NY and I </p>
+            <p>Heyo!! I'm Liza. I'm a 20 year old New Media Design student at Rochester Institute of Technology in Rochester, NY. I'm from Albany, NY. </p>
+            <p>I originally came to RIT for Software Engineering, but I thankfully found New Media Design after i discovered i wanted to go into a more creative field.</p>
+            <p>I do improv comedy and I like weird art, thrift shopping, and plants.</p>
         </div>
         <form method="contact">
-                <div>
-                  <label for="name">Name:</label>
-                  <input type="text" id="name" name="user_name">
-                </div>
-                <div>
-                  <label for="mail">E-mail:</label>
-                  <input type="email" id="mail" name="user_mail">
-                </div>
-                <div>
-                  <label for="msg">Message:</label>
-                  <textarea id="msg" name="user_message"></textarea>
-                </div>
-                <div class="button">
-                    <button type="submit">Contact Me!</button>
-                </div>
-            </form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Contact Me!</button>
+            </div>
+        </form>
 
-        <h2 class="resumeTitle">resume</h2>
+        <h2 class="resumeTitle" id="resume">RESUME</h2>
+        <div class=resume>
+            <h1>Liza Comley</h1>
+            <p>elc2375@g.rit.edu</p> <p>518.881.8437</p> <p>36 Riesling Rd. Niskayuna, NY 12309</p>
+        </div>
+        <div class="col1">
+            <h3>Education</h3>
+                <h2>Rochester Institute of Technology</h2>
+                <p>BFA, New Media Design</p>
+                <p>GPA: 3.48/ 4.0</p>
+                <p>Expected graduation date, May 2021</p>
+                <p>RIT Presidential Award Recipient</p>
+                <p>Dean’s List Spring 2017, Fall 2017</p>
+            <h3>Work Experience</h3>
+            <h2>Clerk, Union College Bookstore</h2>
+            <p>Schenectady, NY</p>
+            <p>Summers, 2014-2017</p>
+            <ul>
+                <li>- Prepared online computer and apparel orders to be shipped.</li>
+                <li>- Rang up customers.</li>
+                <li>- Rang up customers.</li>
+                <li>- Provided customer service.</li>
+                <li>- Cleaned and organized the store.</li>
+            </ul>
+        </div>
+        <div class="col2">
+            <h3>Software</h3>
+                <ul>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Premier Pro</li>
+                    <li>Adobe After Effects</li>
+                    <li>Cinema4D</li>
+                    <li>3Ds Max</li>
+                    <li>Microsoft Suite</li>
+                </ul>
+            <h3>Programming</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C#</li>
+                <li>Processing</li>
+                <li>Python</li>
+            </ul>
+            <h3>Activities</h3>
+                <h2>RIT Improv</h2>
+                    <p>Member, August 2017 - Present</p>
+                <h2>New Media Club</h2>
+                    <p>Member, August 2017 - Present</p>
+                <h2>Thought At Work</h2>
+                    <p>Volunteer, October 2017</p>
 
-        <h2 class="documentationTitle">project documentation</h2>
+        </div>
+
+        <h2 class="documentationTitle" id="documentation">PROJECT DOCUMENTATION</h2>
+
 
         <img src="/finalproject/images/bar01.svg" alt="progress bar" class="bar1">
         <img src="/finalproject/images/bar02.svg" alt="progress bar" class="bar2">
