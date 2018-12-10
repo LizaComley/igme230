@@ -116,20 +116,26 @@ body{
     color: #1a1a1a;
     z-index: 100;;
 }
-
+#menu li a{
+    color: #1a1a1a;
+    text-decoration: none;
+}
 #menuToggle input:checked ~ ul{
     transform: none;
 }
 
 /* --------------------------------------------------- */
-/*                   Styling of divs
+/*                   Styling of divs & type
 /* --------------------------------------------------- */
-
 
 h2{
     font-size: 2em;
 }
+h1{
+    font-size: 1.8em;
+}
 
+/*project gallery code*/
 .p1, .p2, .p3, .p4{
     position: relative;
     text-align: center;
@@ -146,32 +152,14 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .projimg:hover{
     opacity: .5;
 }
 
-header, footer{
-    display: flex;
-    align-items: center;
-}
 
-h1{
-    font-size: 1.8em;
-}
 
-img{
-    max-width: 100%;
-    max-height: auto;
-    background-size: cover;
-    background-position: center;
-}
 
-#menu li a{
-    color: #1a1a1a;
-    text-decoration: none;
-    
-}
+/*arrow element positioning*/
 .arrow{
     display: block;
     position: absolute;
@@ -183,13 +171,14 @@ img{
     bottom: 5vh;
 
 }
-button{
-    color: #1a1a1a;
-    background-color: #ffbda9;
-    margin-top: 15px;
-    padding: 3px;
-}
 
+/*contact formatting*/
+img{
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
 label{
     margin-right: 4px;
 }
@@ -197,8 +186,14 @@ input{
     margin-bottom: 12px;
     width: 40vw;
 }
+button{
+    color: #1a1a1a;
+    background-color: #ffbda9;
+    margin-top: 15px;
+    padding: 3px;
+}
 
-
+/*Resume formatting*/
 .col1 p, .col2 p, .resume p, .col1 li, .col2 li{
     font-size: .9em;
     margin: 0;
@@ -233,7 +228,7 @@ ul{
     list-style-type: none;
     margin-bottom: 1px;
 }
-
+/*documentation formatting*/
 .doc h3{
     color: #ffbda9;
     font-size: 1.2em;
@@ -241,6 +236,12 @@ ul{
 .doc p, .doc a{
     font-size: 1em;
     padding: 0 10vw;
+}
+
+/*header & footer*/
+header, footer{
+    display: flex;
+    align-items: center;
 }
 footer{
     display:flex;
@@ -262,6 +263,7 @@ header{
 nav{
     grid-area: nav;
 }
+
 /*landing page*/
 .homepage{
     grid-area: landing;
@@ -361,7 +363,7 @@ footer{
 }
 
 
-
+/*PROJECT PAGES*/
 .pHead{
     grid-area: head;
     color: #ffbda9;
