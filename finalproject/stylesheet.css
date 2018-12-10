@@ -195,18 +195,18 @@ input{
 
 
 .col1 p, .col2 p, .resume p, .col1 li, .col2 li{
-    font-size: .8em;
+    font-size: .9em;
     margin: 0;
     margin-bottom: .4em;
 }
 .col1 h2, .col2 h2, .resume h2{
     font-weight: 700;
-    font-size: .9em;
+    font-size: 1em;
     margin-bottom: .4em;
 }
 .col1 h3, .col2 h3{
     color: #ffbda9;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: .4em;
 }
 .resume h1{
@@ -224,8 +224,16 @@ ul{
     margin-bottom: 1px;
 }
 
+.doc h3{
+    color: #ffbda9;
+    font-size: 1.2em;
+}
+.doc p, .doc a{
+    font-size: 1em;
+    padding: 0 10vw;
+}
 footer p{
-    margin-left: 1em;
+    margin-left: 9em;
     font-size: .7em;
 }
 
