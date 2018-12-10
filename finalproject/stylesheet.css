@@ -113,6 +113,8 @@ body{
 #menu li{
     padding: 10px 0;
     font-size: 22px;
+    color: #1a1a1a;
+    z-index: 100;;
 }
 
 #menuToggle input:checked ~ ul{
@@ -123,11 +125,12 @@ body{
 /*                   Styling of divs
 /* --------------------------------------------------- */
 
+
 h2{
     font-size: 2em;
 }
 
-#project{
+.p1, .p2, .p3, .p4{
     position: relative;
     text-align: center;
 }
@@ -144,7 +147,7 @@ h2{
     transform: translate(-50%, -50%);
 }
 
-#projimg:hover{
+.projimg:hover{
     opacity: .5;
 }
 
@@ -164,8 +167,10 @@ img{
     background-position: center;
 }
 
-#menu li{
+#menu li a{
     color: #1a1a1a;
+    text-decoration: none;
+    
 }
 .arrow{
     display: block;
