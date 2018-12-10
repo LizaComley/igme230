@@ -14,6 +14,7 @@ White - text - #f9f9f9
 
 ********************************************************/
 
+/*basic css for the document*/
 *{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -120,7 +121,7 @@ body{
 }
 
 /* --------------------------------------------------- */
-/*                          */
+/*                   Styling of divs
 /* --------------------------------------------------- */
 
 h2{
@@ -248,7 +249,7 @@ footer p{
 }
 
 /* --------------------------------------------------- */
-/*                       GRID AREAS                    */
+/*                   GRID AREAS                    */
 /* --------------------------------------------------- */
 header{
     grid-area: header;
@@ -257,13 +258,13 @@ header{
 nav{
     grid-area: nav;
 }
-
+/*landing page*/
 .homepage{
     grid-area: landing;
     height: 90vh;
     margin-bottom: 10vh;
 }
-
+/*GALLERY*/
 .myWork{
     grid-area: work;
 }
@@ -281,7 +282,7 @@ nav{
     margin-bottom: 10vh;
 }
 
-
+/*nav progress assets*/
 .bar1{
     grid-area: bar1;
 }
@@ -302,6 +303,7 @@ nav{
     max-height: 40vh;
 }
 
+/*ABOUT & CONTACT*/
 .aboutTitle{
     grid-area: abtT;
 }
@@ -316,6 +318,7 @@ form{
     margin-bottom: 10vh;
 }
 
+/*RESUME*/
 .resumeTitle{
     grid-area: resT;
 }
@@ -330,6 +333,8 @@ form{
     margin-left: 8vw;
     margin-bottom: 10vh;
 }
+
+/*DOCUMENTATION*/
 .documentationTitle{
     grid-area: docT;
 }
@@ -338,6 +343,7 @@ form{
     margin-bottom: 10vh;
 }
 
+/*FOOTER*/
 footer{
     grid-area: footer;
 }
@@ -421,6 +427,7 @@ footer{
         "doc"
         "footer";
     }
+    /*styling*/
     .bar1, .bar2, .bar3, .bar4, .bar5{
         display: none;
     }
