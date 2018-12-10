@@ -209,6 +209,11 @@ input{
     font-size: 1.3em;
     margin-bottom: .4em;
 }
+.resume p{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .resume h1{
     color: #ffbda9;
     font-size: 1.4em;
@@ -232,8 +237,13 @@ ul{
     font-size: 1em;
     padding: 0 10vw;
 }
+footer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 footer p{
-    margin-left: 9em;
+    margin-left: 5vw;
     font-size: .7em;
 }
 
