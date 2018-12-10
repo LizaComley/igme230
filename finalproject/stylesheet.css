@@ -267,7 +267,15 @@ nav{
     grid-area: landing;
     height: 90vh;
     margin-bottom: 10vh;
+    display: flex;
 }
+.idk{
+    grid-area: idk;
+    justify-content: flex-end;
+    height: 70vh;
+    width: auto;
+}
+
 /*GALLERY*/
 .myWork{
     grid-area: work;
@@ -351,6 +359,18 @@ form{
 footer{
     grid-area: footer;
 }
+
+
+
+.pHead{
+    grid-area: head;
+}
+.pImg{
+    grid-area: img;
+}
+.pDesc{
+    grid-area: text;
+}
 /* --------------------------------------------------- */
 /*             CSS GRID CONTAINER & SETUP              */
 /* --------------------------------------------------- */
@@ -377,6 +397,10 @@ footer{
     "bar2 work work work"
     "bar2 p1 p2 ."
     "bar2 p3 p4 ."
+
+    "head head head head"
+    ". img text ."
+    " .img text ."
 
     "bar3 abtT abtT abtT"
     "bar3 photo abtP ."
