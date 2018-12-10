@@ -224,8 +224,13 @@ ul{
     margin-bottom: 1px;
 }
 
+footer p{
+    margin-left: 1em;
+    font-size: .7em;
+}
+
 /* --------------------------------------------------- */
-/*                                GRID AREAS             */
+/*                       GRID AREAS                    */
 /* --------------------------------------------------- */
 header{
     grid-area: header;
@@ -238,6 +243,7 @@ nav{
 .homepage{
     grid-area: landing;
     height: 90vh;
+    margin-bottom: 10vh;
 }
 
 .myWork{
@@ -254,6 +260,7 @@ nav{
 }
 .p4{
     grid-area: p4;
+    margin-bottom: 10vh;
 }
 
 
@@ -262,7 +269,6 @@ nav{
 }
 .bar2{
     grid-area: bar2;
-    
 }
 .bar3{
     grid-area: bar3;
@@ -274,7 +280,7 @@ nav{
     grid-area: bar5;
 }
 .bar1, .bar2, .bar3, .bar4, .bar5{
-    padding-top: 3vh;
+    padding-top: 6vh;
     max-height: 40vh;
 }
 
@@ -289,6 +295,7 @@ nav{
 }
 form{
     grid-area: contact;
+    margin-bottom: 10vh;
 }
 
 .resumeTitle{
@@ -303,11 +310,15 @@ form{
 .col2{
     grid-area: col2;
     margin-left: 8vw;
+    margin-bottom: 10vh;
 }
 .documentationTitle{
     grid-area: docT;
 }
-
+.doc{
+    grid-area: doc;
+    margin-bottom: 10vh;
+}
 
 footer{
     grid-area: footer;
@@ -328,7 +339,7 @@ footer{
     grid-row-gap: 2vw;
     
     grid-template-columns: 1fr 5fr 5fr 1fr;
-    grid-template-rows: repeat(20,auto);
+    grid-template-rows: auto;
 
     grid-template-areas:
     "header header header nav"
@@ -339,7 +350,6 @@ footer{
     "bar2 p1 p2 ."
     "bar2 p3 p4 ."
 
-    
     "bar3 abtT abtT abtT"
     "bar3 photo abtP ."
     "bar3 contact contact ."
@@ -349,7 +359,7 @@ footer{
     "bar4 col1 col2 ."
 
     "bar5 docT docT docT"
-    "bar5 . . ."
+    "bar5 doc doc ."
 
     "footer footer footer footer";
 }
@@ -374,6 +384,7 @@ footer{
     
         grid-template-areas:
         "header"
+        "nav"
         "landing"
         "work"
         "p1"
@@ -389,6 +400,7 @@ footer{
         "col1"
         "col2"
         "docT"
+        "doc"
         "footer";
     }
     .bar1, .bar2, .bar3, .bar4, .bar5{
@@ -406,4 +418,5 @@ footer{
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;
+    }
 }
