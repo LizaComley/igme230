@@ -370,10 +370,12 @@ footer{
 }
 .pImg{
     grid-area: img;
+    display: none;
 }
 .pDesc{
     grid-area: text;
 }
+
 /* --------------------------------------------------- */
 /*             CSS GRID CONTAINER & SETUP              */
 /* --------------------------------------------------- */
@@ -402,8 +404,8 @@ footer{
     "bar2 p3 p4 ."
 
     "head head head head"
-    ". img text ."
-    ". img text ."
+    ". img img ."
+    ". text text ."
 
     "bar3 abtT abtT abtT"
     "bar3 photo abtP ."

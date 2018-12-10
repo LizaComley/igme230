@@ -15,4 +15,7 @@ $(".p4").hover(function() {
 });
 
 
-
+/* fades in image on project pages */
+$(function(){
+    $(".pImg").fadeIn();
+});
