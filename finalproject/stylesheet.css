@@ -209,7 +209,7 @@ input{
     font-size: 1.3em;
     margin-bottom: .4em;
 }
-.resume p{
+.resume sub{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
